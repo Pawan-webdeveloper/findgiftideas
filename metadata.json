@@ -1,0 +1,6 @@
+{
+  "name": "whattogift",
+  "description": "An interactive, AI-powered scrapbook and personalized gift finder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
