@@ -9,18 +9,21 @@ interface HeroProps {
 export default function Hero({ onStartQuiz, onExploreGuides }: HeroProps) {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24 pt-8">
+      {/* SEO-optimized hidden heading for search engines */}
+      <h1 className="sr-only not-sr-only-focus:not-sr-only">Gift Ideas For Every Relationship and Occasion – Discover Unique Gift Ideas for Women, Men, Best Friends, Boyfriend, Husband, Father, Sister, Brother &amp; More</h1>
+      
       <div className="lg:col-span-7 flex flex-col justify-center">
         <div className="mb-6">
           <span className="inline-block text-[10px] uppercase tracking-[0.3em] font-bold text-[#1A1A1A]/40">
             Featured Board — Edition 2026
           </span>
         </div>
-        <h1 className="font-sans text-[54px] md:text-[84px] leading-[0.85] font-black tracking-tighter uppercase mb-6 text-[#1A1A1A]">
+        <div className="font-sans text-[54px] md:text-[84px] leading-[0.85] font-black tracking-tighter uppercase mb-6 text-[#1A1A1A]">
           Perfect<br/>Gifting<br/>
           <span className="text-transparent" style={{ WebkitTextStroke: '1px #1A1A1A' }}>
             curated
           </span>
-        </h1>
+        </div>
         <p className="max-w-md text-sm leading-relaxed text-[#1A1A1A]/80 mb-10 font-normal">
           A visual exploration of thoughtful physical objects, handmade artifacts, and customized treasures curated with an uncompromising anti-slop ethic. Pin your favorites or consult our AI stylist.
         </p>

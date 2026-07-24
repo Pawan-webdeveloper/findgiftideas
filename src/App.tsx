@@ -10,6 +10,7 @@ import SavedScrapbook from './components/SavedScrapbook';
 import RecommendationsPage from './components/RecommendationsPage';
 import UserStories from './components/UserStories';
 import CTA from './components/CTA';
+import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import { CURATED_CARDS } from './data';
 import type { ScrapbookCard, GiftItem, RecommendedGift, QuizAnswers, QuizResponse } from './types';
@@ -232,13 +233,75 @@ export default function App() {
             <section id="stories-section" className="scroll-mt-28">
               <UserStories />
             </section>
-          </div>
-        )}
 
-        {/* Modular, high-end CTA */}
-        {currentTab !== 'results' && (
-          <div className="pt-24">
-            <CTA />
+            {/* SEO Content Section – 600+ words about the tool */}
+            <article className="max-w-4xl mx-auto py-16 border-t border-black/5" aria-label="About GiftIdeasFor – Your Gift Discovery Tool">
+              <div className="space-y-6 text-[15px] leading-8 text-[#1A1A1A]/80">
+                <h2 className="font-serif text-3xl md:text-4xl font-light italic text-[#1A1A1A] mb-8">
+                  Discover Thoughtful and Memorable Gift Ideas for Every Relationship and Occasion
+                </h2>
+                
+                <p>
+                  <strong>GiftIdeasFor</strong> is a modern gift discovery platform created to make choosing the perfect present feel simple, inspiring, and deeply personal. Instead of spending hours scrolling through endless generic products, our tool helps you explore curated suggestions intelligently designed around real relationships, personalities, and meaningful occasions. Whether you're searching for <strong>gift ideas for women</strong>, <strong>gift ideas for girls</strong>, <strong>unique gift ideas for women</strong>, or <strong>unique gift ideas for men</strong>, our experience transforms what is often a stressful shopping task into a joyful, guided journey.
+                </p>
+
+                <p>
+                  We understand that finding the right gift is about more than just picking a product. It is about understanding the person you are shopping for. That is why our platform offers a comprehensive approach to gift discovery, helping you find <strong>gift ideas for men</strong> who appreciate practicality, <strong>gift ideas for best friend</strong> who values sentimentality, and <strong>gift ideas for boyfriend</strong> who deserves something genuinely thoughtful. Our curated collections span across all relationship types and budgets, making it easy to discover presents that feel intentional rather than rushed.
+                </p>
+
+                <h3 className="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">
+                  The Perfect Gift for Every Person in Your Life
+                </h3>
+
+                <p>
+                  Our platform is especially valuable for people who want something meaningful for someone close to them. We offer hand-picked ideas for <strong>gift ideas for husband</strong> on anniversaries, thoughtful options for <strong>gift ideas for sister</strong> on her birthday, and practical suggestions for <strong>gift ideas for brother</strong> who has everything. We also cater to <strong>gift ideas for father</strong> who is notoriously hard to shop for, with recommendations that combine utility with genuine sentiment. Each suggestion is matched to the recipient's personality, interests, and your unique relationship with them.
+                </p>
+
+                <p>
+                  Beyond immediate family, our tool supports more casual and social gifting needs. You can explore <strong>gift ideas for male friend</strong> who appreciates style, <strong>gift ideas for female friend</strong> who loves experiences over things, and <strong>gift ideas for best friend</strong> who has been there through everything. We also provide excellent recommendations for workplace and community gifting, including <strong>gift ideas for boyfriend</strong> in long-distance relationships and <strong>gift ideas for husband</strong> celebrating a milestone.
+                </p>
+
+                <h3 className="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">
+                  Gift Ideas for Kids, Students, and Family Celebrations
+                </h3>
+
+                <p>
+                  Families and parents can greatly benefit from GiftIdeasFor when they need practical, fun, or sentimental choices for children. Our recommendations include <strong>return gift ideas for kids</strong> for birthday parties and school events, <strong>gift ideas for boys</strong> who love adventure and exploration, and <strong>gift ideas for girls</strong> who appreciate creativity and self-expression. Each suggestion is thoughtfully curated to match different ages, interests, and developmental stages, ensuring you find something that brings genuine joy.
+                </p>
+
+                <p>
+                  The same thoughtful approach extends to school and workplace gifting scenarios. When you need <strong>teachers day gift ideas for female</strong> teachers to show appreciation, or <strong>diwali gift ideas for employees</strong> to celebrate the festival of lights with warmth and professionalism, our platform provides curated options that strike the right balance between personal and appropriate. These recommendations help make every act of appreciation feel warm, memorable, and suitable for the context.
+                </p>
+
+                <h3 className="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">
+                  What Makes Our Gift Discovery Experience Unique
+                </h3>
+
+                <p>
+                  What distinguishes GiftIdeasFor from other gift finders is our focus on genuine personalization. Instead of generic category browsing, our proprietary scoring engine evaluates your quiz answers across multiple dimensions including the recipient's personality type, your relationship stage, their preferred appreciation style, and your budget range. This ensures that every recommendation—whether for <strong>gift ideas for women</strong> who love aesthetics, <strong>unique gift ideas for men</strong> who value craftsmanship, or <strong>gift ideas for girls</strong> who appreciate thoughtful details—feels individually curated rather than algorithmically random.
+                </p>
+
+                <p>
+                  We also believe in quality over quantity. Every item in our catalog is hand-selected with an uncompromising anti-slop ethic. We avoid generic, mass-produced items in favor of artisan-crafted, thoughtfully designed objects that tell a story. Whether you need <strong>unique gift ideas for women</strong> who have eclectic taste, <strong>unique gift ideas for men</strong> who appreciate fine materials, or <strong>gift ideas for best friend</strong> who deserves something one-of-a-kind, our collections deliver on both beauty and meaning.
+                </p>
+
+                <p>
+                  Our interactive Gift Finder Quiz is the heart of the experience. By answering nine simple questions about the recipient, occasion, relationship stage, personality, budget, and preferences, you unlock a personalized set of recommendations matched specifically to your situation. The quiz adapts its questions based on your previous answers, ensuring a contextual and relevant experience every time. Combined with our curated scrapbook galleries, community stories, and event reminder system, GiftIdeasFor becomes a complete gifting companion for everyone.
+                </p>
+
+                <p>
+                  Whether your goal is to impress a partner with <strong>gift ideas for boyfriend</strong> or <strong>gift ideas for husband</strong>, delight a friend with <strong>gift ideas for best friend</strong>, celebrate a family member with <strong>gift ideas for father</strong>, <strong>gift ideas for mother</strong>, <strong>gift ideas for sister</strong>, or <strong>gift ideas for brother</strong>, or surprise a colleague with appropriate workplace gifts, GiftIdeasFor offers a smart, elegant starting point. We help you move beyond generic options and discover presents that feel intentional, useful, and unique. Explore our curated collections today and give a gift that truly reflects your thoughtfulness and care.
+                </p>
+              </div>
+            </article>
+
+            {/* SEO-Friendly FAQ Section */}
+            <FAQSection />
+
+            {/* Modular, high-end CTA */}
+            <div className="pt-24">
+              <CTA />
+            </div>
           </div>
         )}
       </main>
