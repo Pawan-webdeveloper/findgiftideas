@@ -1,0 +1,171 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout
+  title="Contact Us – GiftIdeasFor"
+  description="Contact GiftIdeasFor. Get in touch with our team for support, partnership inquiries, or any questions about our gift discovery platform."
+  canonical="https://giftideasforx.com/contact"
+>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact GiftIdeasFor",
+      "description": "Contact the GiftIdeasFor team.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "GiftIdeasFor",
+        "url": "https://giftideasforx.com/"
+      }
+    }
+  </script>
+
+  <article class="max-w-4xl mx-auto py-8 space-y-8">
+    <div class="space-y-4 border-b border-black/10 pb-8">
+      <h1 class="font-serif text-4xl md:text-5xl font-light italic text-[#1A1A1A]">
+        Contact Us
+      </h1>
+      <p class="text-[15px] text-[#1A1A1A]/60 leading-relaxed max-w-2xl">
+        Have a question, suggestion, or partnership idea? We would love to hear from you. Reach out using the form below or through our contact details.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="space-y-6">
+        <h2 class="font-serif text-2xl font-light italic text-[#1A1A1A]">Send Us a Message</h2>
+        <form
+          action="#"
+          method="POST"
+          class="space-y-5"
+        >
+          <div>
+            <label for="name" class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/70 mb-1.5">
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="e.g., Alex Morgan"
+              class="w-full bg-white border border-black/15 px-4 py-3 text-sm text-[#1A1A1A] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/70 mb-1.5">
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="e.g., alex@example.com"
+              class="w-full bg-white border border-black/15 px-4 py-3 text-sm text-[#1A1A1A] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="subject" class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/70 mb-1.5">
+              Subject
+            </label>
+            <select
+              id="subject"
+              name="subject"
+              class="w-full bg-white border border-black/15 px-4 py-3 text-sm text-[#1A1A1A] focus:outline-none focus:border-[#1A1A1A] transition-colors"
+            >
+              <option value="general">General Inquiry</option>
+              <option value="support">Support / Technical Issue</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="feedback">Feedback &amp; Suggestions</option>
+              <option value="press">Press / Media</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/70 mb-1.5">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows={5}
+              placeholder="Tell us how we can help..."
+              class="w-full bg-white border border-black/15 px-4 py-3 text-sm text-[#1A1A1A] focus:outline-none focus:border-[#1A1A1A] transition-colors resize-y"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-[#1A1A1A] text-white px-6 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-black/85 active:scale-[0.98] transition-all cursor-pointer"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <h2 class="font-serif text-2xl font-light italic text-[#1A1A1A]">Get in Touch</h2>
+          <p class="text-[15px] text-[#1A1A1A]/70 leading-relaxed">
+            We aim to respond to all inquiries within 24–48 hours during business days.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-white border border-black/10 p-6 space-y-2">
+            <h3 class="text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/50">Email</h3>
+            <p class="text-sm text-[#1A1A1A]">
+              <a href="mailto:hello@giftideasforx.com" class="hover:underline no-underline text-[#1A1A1A]">
+                hello@giftideasforx.com
+              </a>
+            </p>
+            <p class="text-xs text-[#1A1A1A]/50">
+              For general inquiries, support, and feedback.
+            </p>
+          </div>
+
+          <div class="bg-white border border-black/10 p-6 space-y-2">
+            <h3 class="text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/50">Partnerships</h3>
+            <p class="text-sm text-[#1A1A1A]">
+              <a href="mailto:partners@giftideasforx.com" class="hover:underline no-underline text-[#1A1A1A]">
+                partners@giftideasforx.com
+              </a>
+            </p>
+            <p class="text-xs text-[#1A1A1A]/50">
+              For brand collaborations, affiliate partnerships, and media inquiries.
+            </p>
+          </div>
+
+          <div class="bg-white border border-black/10 p-6 space-y-2">
+            <h3 class="text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/50">Address</h3>
+            <p class="text-sm text-[#1A1A1A] leading-relaxed">
+              GiftIdeasFor<br />
+              123 Curated Lane<br />
+              Design District, CA 94102<br />
+              United States
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#FAF9F6] border border-black/10 p-6">
+          <h3 class="text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/50 mb-2">
+            Response Time
+          </h3>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-emerald-500 rounded-none"></div>
+            <span class="text-sm text-[#1A1A1A]/70">
+              Typically responds within 24 hours
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</SiteLayout>
+

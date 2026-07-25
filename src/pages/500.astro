@@ -1,0 +1,86 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout
+  title="500 – Server Error | GiftIdeasFor"
+  description="An unexpected error occurred. Please try again later or contact our support team if the issue persists."
+  canonical="https://giftideasforx.com/500"
+>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "500 – Server Error",
+      "description": "An unexpected server error occurred on GiftIdeasFor.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "GiftIdeasFor",
+        "url": "https://giftideasforx.com/"
+      }
+    }
+  </script>
+
+  <article class="max-w-2xl mx-auto py-16 md:py-24 text-center space-y-8">
+    <!-- Error Code -->
+    <div class="space-y-2">
+      <p class="font-serif text-[180px] md:text-[220px] font-light italic text-[#1A1A1A]/10 leading-none select-none">
+        500
+      </p>
+      <h1 class="font-serif text-3xl md:text-4xl font-light italic text-[#1A1A1A] -mt-12 md:-mt-16">
+        Something Went Wrong
+      </h1>
+    </div>
+
+    <!-- Description -->
+    <div class="space-y-4 max-w-md mx-auto">
+      <p class="text-[15px] text-[#1A1A1A]/70 leading-relaxed">
+        Our gift discovery engine hit an unexpected snag. This is on us — not you. We've been notified and are working to restore things as quickly as possible.
+      </p>
+      <p class="text-[13px] text-[#1A1A1A]/50 leading-relaxed">
+        In the meantime, you can try again or explore our curated collections directly.
+      </p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+      <a
+        href="/"
+        class="bg-[#1A1A1A] text-white px-8 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-black/85 transition-all no-underline"
+      >
+        Go to Home
+      </a>
+      <a
+        href="/contact"
+        class="bg-white border border-black/10 text-[#1A1A1A] px-8 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#1A1A1A] hover:text-[#FAF9F6] transition-all no-underline"
+      >
+        Contact Support
+      </a>
+    </div>
+
+    <!-- Quick retry hint -->
+    <div class="border-t border-black/10 pt-8 mt-12">
+      <p class="text-[10px] font-bold uppercase tracking-widest text-[#1A1A1A]/40 mb-4">
+        Try these instead
+      </p>
+      <nav class="flex flex-wrap items-center justify-center gap-6">
+        <a href="/" class="text-[13px] text-[#1A1A1A]/60 hover:text-[#1A1A1A] transition-colors no-underline underline decoration-black/20 underline-offset-4">
+          Home
+        </a>
+        <a href="/about" class="text-[13px] text-[#1A1A1A]/60 hover:text-[#1A1A1A] transition-colors no-underline underline decoration-black/20 underline-offset-4">
+          About Us
+        </a>
+        <a href="/contact" class="text-[13px] text-[#1A1A1A]/60 hover:text-[#1A1A1A] transition-colors no-underline underline decoration-black/20 underline-offset-4">
+          Contact
+        </a>
+        <a href="/privacy" class="text-[13px] text-[#1A1A1A]/60 hover:text-[#1A1A1A] transition-colors no-underline underline decoration-black/20 underline-offset-4">
+          Privacy Policy
+        </a>
+        <a href="/terms" class="text-[13px] text-[#1A1A1A]/60 hover:text-[#1A1A1A] transition-colors no-underline underline decoration-black/20 underline-offset-4">
+          Terms &amp; Conditions
+        </a>
+      </nav>
+    </div>
+  </article>
+</SiteLayout>
+

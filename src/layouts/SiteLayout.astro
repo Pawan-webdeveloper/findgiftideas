@@ -1,0 +1,140 @@
+---
+import '../index.css';
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+const { title, description, canonical } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={canonical || 'https://giftideasforx.com/'} />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM0TPR2K5V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JM0TPR2K5V');
+    </script>
+  </head>
+  <body class="selection:bg-[#1A1A1A] selection:text-[#FAF9F6] antialiased bg-[#FAF9F6] text-[#1A1A1A] min-h-screen flex flex-col font-sans">
+    <!-- Static Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-xl border-b border-black/5 px-8 md:px-12 py-5 flex items-center justify-between shadow-[rgba(0,0,0,0.02)_0px_2px_4px_0px]">
+      <div class="flex items-center gap-8">
+        <a href="/" class="font-serif text-3xl font-light italic text-[#1A1A1A] tracking-tight hover:opacity-70 transition-all no-underline">
+          giftideasfor
+        </a>
+        <span class="hidden lg:inline-block h-px w-8 bg-black/10"></span>
+        <nav class="hidden md:flex gap-8 items-center">
+          <a href="/" class="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline">
+            Home
+          </a>
+          <a href="/about" class="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline">
+            About Us
+          </a>
+          <a href="/contact" class="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline">
+            Contact
+          </a>
+          <a href="/privacy" class="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline">
+            Privacy
+          </a>
+          <a href="/terms" class="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline">
+            Terms
+          </a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a
+          href="/"
+          class="bg-[#1A1A1A] text-white px-5 py-2.5 rounded-none text-[10px] font-bold tracking-widest uppercase hover:bg-black/85 active:scale-95 transition-all no-underline"
+        >
+          FIND GIFTS
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="flex-grow pt-28 px-6 pb-24 max-w-[1200px] mx-auto w-full">
+      <slot />
+    </main>
+
+    <!-- Static Footer -->
+    <footer class="bg-[#FAF9F6] border-t border-black/10 py-16 mt-16">
+      <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 space-y-4">
+          <a href="/" class="font-serif text-3xl font-light italic text-[#1A1A1A] no-underline">
+            giftideasfor
+          </a>
+          <p class="text-[#1A1A1A]/60 text-[13px] font-normal leading-relaxed">
+            A digital space for analog sentiment. <br />
+            &copy; 2026 giftideasfor. All rights reserved.
+          </p>
+        </div>
+
+        <div class="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div class="space-y-4">
+            <h4 class="text-[10px] font-bold text-[#1A1A1A]/40 uppercase tracking-[0.3em]">
+              Platform
+            </h4>
+            <nav class="flex flex-col gap-2.5">
+              <a href="/" class="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all no-underline">
+                Home
+              </a>
+              <a href="/contact" class="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all no-underline">
+                Contact
+              </a>
+            </nav>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="text-[10px] font-bold text-[#1A1A1A]/40 uppercase tracking-[0.3em]">
+              Company
+            </h4>
+            <nav class="flex flex-col gap-2.5">
+              <a href="/about" class="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all no-underline">
+                About Us
+              </a>
+              <a href="/contact" class="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all no-underline">
+                Contact
+              </a>
+              <a href="/privacy" class="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all no-underline">
+                Privacy Policy
+              </a>
+              <a href="/terms" class="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all no-underline">
+                Terms &amp; Conditions
+              </a>
+            </nav>
+          </div>
+
+          <div class="space-y-4 col-span-2 sm:col-span-1">
+            <h4 class="text-[10px] font-bold text-[#1A1A1A]/40 uppercase tracking-[0.3em]">
+              Hand-Pressed
+            </h4>
+            <p class="text-xs text-[#1A1A1A]/60 leading-relaxed">
+              Every scrapbook board is manually curated with a strict anti-slop ethic. Crafting premium recommendations since 2026.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

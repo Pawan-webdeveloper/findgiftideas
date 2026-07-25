@@ -1,0 +1,107 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout
+  title="About Us – GiftIdeasFor"
+  description="Learn about GiftIdeasFor, the modern gift discovery platform. Our mission is to make gift-giving thoughtful, personal, and effortless through curated recommendations and smart quiz technology."
+  canonical="https://giftideasforx.com/about"
+>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About GiftIdeasFor",
+      "description": "Learn about GiftIdeasFor, the modern gift discovery platform.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "GiftIdeasFor",
+        "url": "https://giftideasforx.com/"
+      }
+    }
+  </script>
+
+  <article class="max-w-4xl mx-auto py-8 space-y-8">
+    <div class="space-y-4 border-b border-black/10 pb-8">
+      <h1 class="font-serif text-4xl md:text-5xl font-light italic text-[#1A1A1A]">
+        About GiftIdeasFor
+      </h1>
+      <p class="text-[15px] text-[#1A1A1A]/60 leading-relaxed max-w-2xl">
+        We believe a great gift is more than just an object—it is a message that says, "I see you, I understand you, and I value you."
+      </p>
+    </div>
+
+    <div class="space-y-6 text-[15px] leading-8 text-[#1A1A1A]/80">
+      <h2 class="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">Our Mission</h2>
+      <p>
+        GiftIdeasFor was born from a simple frustration: finding the perfect gift should feel joyful and inspiring, not stressful and overwhelming. We created a platform that combines the warmth of human curation with the precision of smart technology to help you discover presents that feel deeply personal and genuinely thoughtful.
+      </p>
+      <p>
+        Our mission is to transform gift-giving from a chore into a meaningful act of connection. We believe that everyone deserves to feel seen and celebrated, and the right gift—however big or small—can be a powerful vehicle for that sentiment.
+      </p>
+
+      <h2 class="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">How It Works</h2>
+      <p>
+        At the heart of GiftIdeasFor is our intelligent Gift Finder Quiz. By answering a series of thoughtful questions about the recipient, the occasion, your relationship, and your budget, our proprietary scoring engine analyzes your responses across multiple dimensions:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Recipient Personality Type:</strong> Practical, sentimental, adventurous, minimalist, or expressive.</li>
+        <li><strong>Relationship Stage:</strong> New dating, long-term partner, family member, close friend, or colleague.</li>
+        <li><strong>Appreciation Style:</strong> Experiences, material objects, consumables, or sentimental keepsakes.</li>
+        <li><strong>Budget Range:</strong> From small tokens of appreciation to milestone splurges.</li>
+      </ul>
+      <p>
+        The result is a curated set of recommendations that feel individually tailored—not algorithmically random. Every item in our catalog is hand-selected by our team with an uncompromising anti-slop ethic, favoring artisan craftsmanship, thoughtful design, and genuine quality.
+      </p>
+
+      <h2 class="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">Our Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="bg-white border border-black/10 p-6 space-y-2">
+          <h3 class="font-serif font-bold text-lg text-[#1A1A1A]">Quality Over Quantity</h3>
+          <p class="text-sm text-[#1A1A1A]/70 leading-relaxed">
+            We hand-pick every item in our collections. No generic, mass-produced clutter—only objects with intention and soul.
+          </p>
+        </div>
+        <div class="bg-white border border-black/10 p-6 space-y-2">
+          <h3 class="font-serif font-bold text-lg text-[#1A1A1A]">Thoughtful Personalization</h3>
+          <p class="text-sm text-[#1A1A1A]/70 leading-relaxed">
+            Our scoring engine evaluates your unique situation to deliver recommendations that feel genuinely personal.
+          </p>
+        </div>
+        <div class="bg-white border border-black/10 p-6 space-y-2">
+          <h3 class="font-serif font-bold text-lg text-[#1A1A1A]">Radical Transparency</h3>
+          <p class="text-sm text-[#1A1A1A]/70 leading-relaxed">
+            We clearly disclose affiliate partnerships. Our editorial integrity is never compromised by commercial relationships.
+          </p>
+        </div>
+        <div class="bg-white border border-black/10 p-6 space-y-2">
+          <h3 class="font-serif font-bold text-lg text-[#1A1A1A]">Community First</h3>
+          <p class="text-sm text-[#1A1A1A]/70 leading-relaxed">
+            We celebrate real stories from real gift-givers. Our platform is built on shared experiences and genuine outcomes.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl font-light italic text-[#1A1A1A] mt-10 mb-4">Our Story</h2>
+      <p>
+        GiftIdeasFor launched in 2026 with a simple premise: the internet has endless product lists but very little genuine guidance. We wanted to create a space where thoughtful gift-giving is celebrated, where every recommendation has a reason behind it, and where the act of choosing a gift feels as special as giving it.
+      </p>
+      <p>
+        Our team combines expertise in data science, editorial curation, and design—working together to build a platform that serves both the practical and emotional dimensions of gift-giving. We are shoppers ourselves, and we built GiftIdeasFor for the version of us who used to spend three hours scrolling with no result.
+      </p>
+
+      <div class="bg-[#FAF9F6] border border-black/10 p-8 text-center mt-10">
+        <h3 class="font-serif text-2xl font-light italic text-[#1A1A1A] mb-4">
+          Ready to find the perfect gift?
+        </h3>
+        <a
+          href="/"
+          class="inline-block bg-[#1A1A1A] text-white px-8 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-black/85 transition-all no-underline"
+        >
+          Take the Gift Finder Quiz
+        </a>
+      </div>
+    </div>
+  </article>
+</SiteLayout>
+

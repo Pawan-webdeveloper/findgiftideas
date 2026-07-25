@@ -20,14 +20,14 @@ export default function Footer() {
               Platform
             </h4>
             <nav className="flex flex-col gap-2.5">
-              <a href="#" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
-                How it works
+              <a href="/" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+                Home
               </a>
-              <a href="#" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
-                Gift Ideas
+              <a href="/about" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+                About Us
               </a>
-              <a href="#" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
-                Quiz
+              <a href="/contact" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+                Contact
               </a>
             </nav>
           </div>
@@ -37,14 +37,17 @@ export default function Footer() {
               Company
             </h4>
             <nav className="flex flex-col gap-2.5">
-              <a href="#" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+              <a href="/about" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
                 About Us
               </a>
-              <a href="#" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+              <a href="/contact" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
                 Contact
               </a>
-              <a href="#" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+              <a href="/privacy" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
                 Privacy Policy
+              </a>
+              <a href="/terms" className="text-[13px] text-[#1A1A1A] hover:underline hover:text-black/50 transition-all">
+                Terms &amp; Conditions
               </a>
             </nav>
           </div>

@@ -83,6 +83,19 @@ export default function Header({
               </span>
             )}
           </button>
+
+          <a
+            href="/about"
+            className="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline"
+          >
+            About
+          </a>
+          <a
+            href="/privacy"
+            className="text-[10px] font-bold uppercase tracking-widest transition-all text-black/60 hover:text-black/50 no-underline"
+          >
+            Privacy
+          </a>
         </nav>
       </div>
 
