@@ -30,7 +30,7 @@ export default function Header({
           className="font-serif text-3xl font-light italic text-[#1A1A1A] tracking-tight hover:opacity-70 transition-all cursor-pointer"
           id="nav-logo"
         >
-          giftideasfor
+          Giftideasfor
         </button>
         <span className="hidden lg:inline-block h-px w-8 bg-black/10"></span>
         <nav className="hidden md:flex gap-8 items-center">
