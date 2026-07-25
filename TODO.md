@@ -32,3 +32,15 @@
 ### 2. Build & Verify
 - [x] Run `astro build` — all error pages compiled successfully
 
+## Cloudflare Workers Deployment
+
+### Steps
+- [x] Install `@astrojs/cloudflare` adapter
+- [x] Remove `@astrojs/node` adapter
+- [x] Update `astro.config.mjs` to use Cloudflare adapter with `mode: 'directory'`
+- [x] Create `wrangler.toml` configuration
+- [x] Add `deploy` script to `package.json`
+- [x] Build verified — `astro build` compiles successfully with Cloudflare adapter
+- [ ] Run `wrangler login` to authenticate with Cloudflare
+- [ ] Run `npm run deploy` to deploy to Cloudflare Workers
+
