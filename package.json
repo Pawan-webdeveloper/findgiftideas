@@ -10,7 +10,7 @@
     "start": "node ./dist/server/entry.mjs",
     "clean": "rm -rf dist server.js .astro",
     "lint": "tsc --noEmit",
-    "deploy": "astro build && wrangler deploy"
+    "deploy": "astro build && wrangler deploy --config dist/server/wrangler.json"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.1.4",
