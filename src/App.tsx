@@ -235,14 +235,14 @@ export default function App() {
             </section>
 
             {/* SEO Content Section – 600+ words about the tool */}
-            <article className="max-w-4xl mx-auto py-16 border-t border-black/5" aria-label="About GiftIdeasFor – Your Gift Discovery Tool">
+            <article className="max-w-4xl mx-auto py-16 border-t border-black/5" aria-label="About GiftIdeaFor – Your Gift Discovery Tool">
               <div className="space-y-6 text-[15px] leading-8 text-[#1A1A1A]/80">
                 <h2 className="font-serif text-3xl md:text-4xl font-light italic text-[#1A1A1A] mb-8">
                   Discover Thoughtful and Memorable Gift Ideas for Every Relationship and Occasion
                 </h2>
                 
                 <p>
-                  <strong>GiftIdeasFor</strong> is a modern gift discovery platform created to make choosing the perfect present feel simple, inspiring, and deeply personal. Instead of spending hours scrolling through endless generic products, our tool helps you explore curated suggestions intelligently designed around real relationships, personalities, and meaningful occasions. Whether you're searching for <strong>gift ideas for women</strong>, <strong>gift ideas for girls</strong>, <strong>unique gift ideas for women</strong>, or <strong>unique gift ideas for men</strong>, our experience transforms what is often a stressful shopping task into a joyful, guided journey.
+                  <strong>GiftIdeaFor</strong> is a modern gift discovery platform created to make choosing the perfect present feel simple, inspiring, and deeply personal. Instead of spending hours scrolling through endless generic products, our tool helps you explore curated suggestions intelligently designed around real relationships, personalities, and meaningful occasions. Whether you're searching for <strong>gift ideas for women</strong>, <strong>gift ideas for girls</strong>, <strong>unique gift ideas for women</strong>, or <strong>unique gift ideas for men</strong>, our experience transforms what is often a stressful shopping task into a joyful, guided journey.
                 </p>
 
                 <p>
@@ -266,7 +266,7 @@ export default function App() {
                 </h3>
 
                 <p>
-                  Families and parents can greatly benefit from GiftIdeasFor when they need practical, fun, or sentimental choices for children. Our recommendations include <strong>return gift ideas for kids</strong> for birthday parties and school events, <strong>gift ideas for boys</strong> who love adventure and exploration, and <strong>gift ideas for girls</strong> who appreciate creativity and self-expression. Each suggestion is thoughtfully curated to match different ages, interests, and developmental stages, ensuring you find something that brings genuine joy.
+                  Families and parents can greatly benefit from GiftIdeaFor when they need practical, fun, or sentimental choices for children. Our recommendations include <strong>return gift ideas for kids</strong> for birthday parties and school events, <strong>gift ideas for boys</strong> who love adventure and exploration, and <strong>gift ideas for girls</strong> who appreciate creativity and self-expression. Each suggestion is thoughtfully curated to match different ages, interests, and developmental stages, ensuring you find something that brings genuine joy.
                 </p>
 
                 <p>
@@ -278,7 +278,7 @@ export default function App() {
                 </h3>
 
                 <p>
-                  What distinguishes GiftIdeasFor from other gift finders is our focus on genuine personalization. Instead of generic category browsing, our proprietary scoring engine evaluates your quiz answers across multiple dimensions including the recipient's personality type, your relationship stage, their preferred appreciation style, and your budget range. This ensures that every recommendation—whether for <strong>gift ideas for women</strong> who love aesthetics, <strong>unique gift ideas for men</strong> who value craftsmanship, or <strong>gift ideas for girls</strong> who appreciate thoughtful details—feels individually curated rather than algorithmically random.
+                  What distinguishes GiftIdeaFor from other gift finders is our focus on genuine personalization. Instead of generic category browsing, our proprietary scoring engine evaluates your quiz answers across multiple dimensions including the recipient's personality type, your relationship stage, their preferred appreciation style, and your budget range. This ensures that every recommendation—whether for <strong>gift ideas for women</strong> who love aesthetics, <strong>unique gift ideas for men</strong> who value craftsmanship, or <strong>gift ideas for girls</strong> who appreciate thoughtful details—feels individually curated rather than algorithmically random.
                 </p>
 
                 <p>
@@ -286,11 +286,11 @@ export default function App() {
                 </p>
 
                 <p>
-                  Our interactive Gift Finder Quiz is the heart of the experience. By answering nine simple questions about the recipient, occasion, relationship stage, personality, budget, and preferences, you unlock a personalized set of recommendations matched specifically to your situation. The quiz adapts its questions based on your previous answers, ensuring a contextual and relevant experience every time. Combined with our curated scrapbook galleries, community stories, and event reminder system, GiftIdeasFor becomes a complete gifting companion for everyone.
+                  Our interactive Gift Finder Quiz is the heart of the experience. By answering nine simple questions about the recipient, occasion, relationship stage, personality, budget, and preferences, you unlock a personalized set of recommendations matched specifically to your situation. The quiz adapts its questions based on your previous answers, ensuring a contextual and relevant experience every time. Combined with our curated scrapbook galleries, community stories, and event reminder system, GiftIdeaFor becomes a complete gifting companion for everyone.
                 </p>
 
                 <p>
-                  Whether your goal is to impress a partner with <strong>gift ideas for boyfriend</strong> or <strong>gift ideas for husband</strong>, delight a friend with <strong>gift ideas for best friend</strong>, celebrate a family member with <strong>gift ideas for father</strong>, <strong>gift ideas for mother</strong>, <strong>gift ideas for sister</strong>, or <strong>gift ideas for brother</strong>, or surprise a colleague with appropriate workplace gifts, GiftIdeasFor offers a smart, elegant starting point. We help you move beyond generic options and discover presents that feel intentional, useful, and unique. Explore our curated collections today and give a gift that truly reflects your thoughtfulness and care.
+                  Whether your goal is to impress a partner with <strong>gift ideas for boyfriend</strong> or <strong>gift ideas for husband</strong>, delight a friend with <strong>gift ideas for best friend</strong>, celebrate a family member with <strong>gift ideas for father</strong>, <strong>gift ideas for mother</strong>, <strong>gift ideas for sister</strong>, or <strong>gift ideas for brother</strong>, or surprise a colleague with appropriate workplace gifts, GiftIdeaFor offers a smart, elegant starting point. We help you move beyond generic options and discover presents that feel intentional, useful, and unique. Explore our curated collections today and give a gift that truly reflects your thoughtfulness and care.
                 </p>
               </div>
             </article>

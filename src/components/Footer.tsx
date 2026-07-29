@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-4 space-y-4">
           <span className="font-serif text-3xl font-light italic text-[#1A1A1A]">
-            giftideasfor
+            giftideafor
           </span>
           <p className="text-[#1A1A1A]/60 text-[13px] font-normal leading-relaxed">
             A digital space for analog sentiment. <br />
-            © 2026 giftideasfor. All rights reserved.
+            © 2026 giftideafor. All rights reserved.
           </p>
         </div>
 

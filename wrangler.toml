@@ -1,11 +1,11 @@
-name = "giftideasfor"
+name = "giftideafor"
 compatibility_date = "2025-04-01"
 compatibility_flags = ["nodejs_compat"]
 
 # Routes configuration - update these with your actual domain
 # routes = [
-#   { pattern = "giftideasforx.com", custom_domain = true },
-#   { pattern = "www.giftideasforx.com", custom_domain = true },
+#   { pattern = "giftideaforx.com", custom_domain = true },
+#   { pattern = "www.giftideaforx.com", custom_domain = true },
 # ]
 
 # Uncomment and set these environment variables if needed
