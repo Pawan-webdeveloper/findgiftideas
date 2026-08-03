@@ -14,10 +14,10 @@ export const CURATED_CARDS: ScrapbookCard[] = [
     items: [
       {
         id: 'g1',
-        name: 'Artisan Walnut Mechanical Keycap',
-        price: '$45',
-        description: 'Hand-carved premium walnut keycap compatible with MX switches, offering a beautiful tactile wood feel.',
-        link: '#',
+        name: 'Ergonomic Gaming Chair',
+        price: '8k',
+        description: 'Premium PU Leather, Adjustable Neck & Lumbar Pillow, 180 Degree Recline with Black Metal Base with 3 Years Warranty.',
+        link: 'https://link.amazon/B0aF67BKN',
       },
       {
         id: 'g2',
