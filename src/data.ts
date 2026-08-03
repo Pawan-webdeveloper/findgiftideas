@@ -21,10 +21,10 @@ export const CURATED_CARDS: ScrapbookCard[] = [
       },
       {
         id: 'g2',
-        name: 'Retro Ambient Desktop Neon Sign',
-        price: '$32',
-        description: 'Miniature dimmable LED pixel art neon sign to add a warm, retro-futuristic arcade glow to any battle station.',
-        link: '#',
+        name: 'Wireless Mechanical Keyboard ',
+        price: '6k',
+        description: 'Hot Swappable | Pre-lubed Linear Switches | RGB Backlit | 2.4GHz/Type-C/Bluetooth Gaming Keyboard',
+        link: 'https://link.amazon/B0d5qG0XF',
       },
       {
         id: 'g3',
