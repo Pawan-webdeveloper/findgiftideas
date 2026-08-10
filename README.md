@@ -1,6 +1,6 @@
-# giftideafor (```text
-  giftideasforx.com
-   ```)
+# giftideafor (```text giftideasforx.com ```)
+   
+  
 
 giftideafor is a polished gift discovery experience built with Astro and React. The app helps users browse curated gift collections, save favorites, and take a guided quiz to receive personalized gift recommendations for different relationships, occasions, and personalities.
 
