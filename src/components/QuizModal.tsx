@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Sparkles, Loader2, Bookmark, BookmarkCheck, ArrowRight, ArrowLeft, RotateCcw } from 'lucide-react';
+import { X, Sparkles, Loader2, Bookmark, BookmarkCheck, ArrowRight, ArrowLeft, RotateCcw, ExternalLink } from 'lucide-react';
 import type { QuizAnswers, RecommendedGift, QuizResponse } from '../types';
 import { PRODUCT_CATALOG } from '../products';
 import { scoreProducts } from '../scoring';
@@ -496,26 +496,37 @@ export default function QuizModal({
                             </p>
                           </div>
 
-                          <button
-                            onClick={() => onSaveRecommendedGift(gift, answers)}
-                            className={`w-full py-2.5 px-4 rounded-none text-[10px] uppercase tracking-widest font-bold border flex items-center justify-center gap-2 transition-all cursor-pointer ${
-                              isSaved
-                                ? 'bg-[#1A1A1A] border-[#1A1A1A] text-white'
-                                : 'border-black/10 text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-[#FAF9F6] hover:border-transparent'
-                            }`}
-                          >
-                            {isSaved ? (
-                              <>
-                                <BookmarkCheck className="w-4 h-4" />
-                                Saved to Scrapbook
-                              </>
-                            ) : (
-                              <>
-                                <Bookmark className="w-4 h-4" />
-                                Pin to My Scrapbook
-                              </>
-                            )}
-                          </button>
+                          <div className="flex flex-wrap gap-3">
+                            <a
+                              href={gift.link || '#'}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="py-2.5 px-4 rounded-none text-[10px] uppercase tracking-widest font-bold border border-black/10 flex items-center justify-center gap-2 transition-all text-[#1A1A1A] hover:bg-black/5"
+                            >
+                              <ExternalLink className="w-4 h-4" />
+                              View on Amazon
+                            </a>
+                            <button
+                              onClick={() => onSaveRecommendedGift(gift, answers)}
+                              className={`py-2.5 px-4 rounded-none text-[10px] uppercase tracking-widest font-bold border flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                                isSaved
+                                  ? 'bg-[#1A1A1A] border-[#1A1A1A] text-white'
+                                  : 'border-black/10 text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-[#FAF9F6] hover:border-transparent'
+                              }`}
+                            >
+                              {isSaved ? (
+                                <>
+                                  <BookmarkCheck className="w-4 h-4" />
+                                  Saved to Scrapbook
+                                </>
+                              ) : (
+                                <>
+                                  <Bookmark className="w-4 h-4" />
+                                  Pin to My Scrapbook
+                                </>
+                              )}
+                            </button>
+                          </div>
                         </div>
                       </div>
                     );

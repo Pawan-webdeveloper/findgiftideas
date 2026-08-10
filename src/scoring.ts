@@ -266,6 +266,7 @@ export function scoreProducts(
     whyFits: item.whyFits,
     categoryTag: item.categoryTag || 'RECOMMENDED',
     image: item.image,
+    link: item.link,
     score: item.score,
     matchReasons: item.matchReasons,
   }));

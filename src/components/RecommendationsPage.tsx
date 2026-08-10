@@ -400,6 +400,15 @@ export default function RecommendationsPage({
                   </div>
 
                   <div className="pt-2 flex flex-wrap gap-3">
+                    <a
+                      href={gift.link || '#'}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="py-3 px-6 text-[10px] uppercase tracking-widest font-bold border border-black/15 flex items-center justify-center gap-2 transition-all text-[#1A1A1A] hover:bg-black/5"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      View on Amazon
+                    </a>
                     <button
                       onClick={() => onSaveRecommendedGift(gift, answers)}
                       className={`py-3 px-6 text-[10px] uppercase tracking-widest font-bold border flex items-center justify-center gap-2 transition-all cursor-pointer ${

@@ -68,6 +68,7 @@ export interface RecommendedGift {
   whyFits: string;
   categoryTag: string;
   image?: string;
+  link?: string;
   score?: number;
   matchReasons?: string[];
 }
