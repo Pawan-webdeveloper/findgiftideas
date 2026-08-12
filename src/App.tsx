@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import CollectionsFilter from './components/CollectionsFilter';
 import ScrapbookGrid from './components/ScrapbookGrid';
-import GiftDetailModal from './components/GiftDetailModal';
 import QuizModal from './components/QuizModal';
 import SavedScrapbook from './components/SavedScrapbook';
 import RecommendationsPage from './components/RecommendationsPage';
@@ -12,14 +11,13 @@ import UserStories from './components/UserStories';
 import CTA from './components/CTA';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
-import { CURATED_CARDS } from './data';
+import { CURATED_CARDS, getCardPath } from './data';
 import type { ScrapbookCard, GiftItem, RecommendedGift, QuizAnswers, QuizResponse } from './types';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<'gallery' | 'saved' | 'results'>('gallery');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [isQuizOpen, setIsQuizOpen] = useState<boolean>(false);
-  const [selectedCard, setSelectedCard] = useState<ScrapbookCard | null>(null);
 
   // Active recommendations state
   const [activeQuizResults, setActiveQuizResults] = useState<QuizResponse | null>(null);
@@ -87,6 +85,12 @@ export default function App() {
     }
     setCurrentTab('results');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleOpenCard = (card: ScrapbookCard) => {
+    if (typeof window !== 'undefined') {
+      window.location.href = getCardPath(card);
+    }
   };
 
   // Card pinning handlers
@@ -188,7 +192,7 @@ export default function App() {
             savedCards={CURATED_CARDS.filter((c) => savedCardIds.includes(c.id))}
             savedItems={savedItems}
             savedRecommendedGifts={savedRecommendedGifts}
-            onOpenCard={setSelectedCard}
+            onOpenCard={handleOpenCard}
             onRemoveCard={handleRemoveCard}
             onRemoveItem={handleRemoveItem}
             onRemoveRecommendedGift={handleRemoveRecommendedGift}
@@ -212,7 +216,7 @@ export default function App() {
               {/* Asymmetric Board Grid */}
               <ScrapbookGrid
                 cards={filteredCards}
-                onOpenCard={setSelectedCard}
+                onOpenCard={handleOpenCard}
                 onTogglePin={handleTogglePinCard}
                 savedIds={savedCardIds}
               />
@@ -362,14 +366,6 @@ export default function App() {
           <span className="text-[10px] font-medium">Saved</span>
         </button>
       </nav>
-
-      {/* Modals and Popups */}
-      <GiftDetailModal
-        card={selectedCard}
-        onClose={() => setSelectedCard(null)}
-        onToggleSavedItem={handleToggleSavedItem}
-        savedItemIds={savedItems.map((si) => si.item.id)}
-      />
 
       {isQuizOpen && (
         <QuizModal

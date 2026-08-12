@@ -1,5 +1,21 @@
 import type { ScrapbookCard } from './types';
 
+const slugify = (text: string) =>
+  text
+    .toLowerCase()
+    .trim()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/--+/g, '-');
+
+export const getCardPath = (card: ScrapbookCard) => `/gift/${slugify(card.title)}`;
+
+export const getCardBySlug = (slug: string | undefined) => {
+  if (!slug) return null;
+  return CURATED_CARDS.find((card) => slugify(card.title) === slug) ?? null;
+};
+
 export const CURATED_CARDS: ScrapbookCard[] = [
   {
     id: 'gamers',
