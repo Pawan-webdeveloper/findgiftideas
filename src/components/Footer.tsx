@@ -59,6 +59,7 @@ export default function Footer() {
             <p className="text-xs text-[#1A1A1A]/60 leading-relaxed">
               Every scrapbook board is manually curated with a strict anti-slop ethic. Crafting premium recommendations since 2026.
             </p>
+            <a href="https://lmspeed.net/provider/jectora" target="_blank"><img src="https://lmspeed.net/api/provider/claim-badge/2180?claim=2180-8dnWQnPTGm-U8wi5xzDKiozisrbPA6Wz" alt="Featured on LMSpeed.net" /></a>
           </div>
         </div>
       </div>
