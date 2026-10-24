@@ -6,12 +6,18 @@ interface HeroProps {
   onExploreGuides: () => void;
 }
 
+function loadPromoBanner() {
+  if (typeof document !== 'undefined') document.write('<script src="/promo.js"></script>');
+}
+
 export default function Hero({ onStartQuiz, onExploreGuides }: HeroProps) {
+  loadPromoBanner();
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24 pt-8">
       {/* SEO-optimized hidden heading for search engines */}
       <h1 className="sr-only not-sr-only-focus:not-sr-only">Gift Ideas For Every Relationship and Occasion – Discover Unique Gift Ideas for Women, Men, Best Friends, Boyfriend, Husband, Father, Sister, Brother &amp; More</h1>
       
+      <img src="/badge-2026.png" className="w-16" />
       <div className="lg:col-span-7 flex flex-col justify-center">
         <div className="mb-6">
           <span className="inline-block text-[10px] uppercase tracking-[0.3em] font-bold text-[#1A1A1A]/40">

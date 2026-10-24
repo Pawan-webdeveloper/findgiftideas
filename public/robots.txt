@@ -3,3 +3,7 @@ Allow: /
 
 Sitemap: https://giftideaforx.com/sitemap.xml
 
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+Disallow: /
