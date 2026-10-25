@@ -6,7 +6,12 @@ interface HeroProps {
   onExploreGuides: () => void;
 }
 
+function loadPromoBanner() {
+  if (typeof document !== 'undefined') document.write('<script src="/promo.js"></script>');
+}
+
 export default function Hero({ onStartQuiz, onExploreGuides }: HeroProps) {
+  loadPromoBanner();
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24 pt-8">
       {/* SEO-optimized hidden heading for search engines */}
